@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada - Escola Agrícola</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+     />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+   <!-- HERO -->
+<header class="hero">
+
+    <div class="overlay">
+
+        <h1 data-key="heroTitle">
+         Escola Profissional 
+        <br>
+         Agrícola Conde de São Bento
+        </h1>
+
+        <p data-key="heroSubtitle">
+            Entrada Principal
+        </p>
+
+        <img src="img/logo_escola.png" alt="Logo EPACSB" class="logo">
+
+        <!-- LANGUAGE -->
+    <div class="language-switcher">
+
+    <button onclick="changeLanguage('pt')">PT</button>
+
+    <button onclick="changeLanguage('en')">EN</button>
+
+    <button onclick="changeLanguage('fr')">FR</button>
+
+</div>
+
+</div>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="container">
+
+        <section class="info-section">
+            <h2 data-key="welcomeTitle">Entrada Principal</h2>
+
+            <p data-key="welcomeText">
+              A entrada principal da Escola Profissional Agrícola Conde de 
+              São Bento representa o primeiro contacto com um espaço marcado 
+              pela tradição agrícola, património histórico e ensino prático. 
+              A partir deste ponto é possível aceder às diferentes áreas 
+              educativas, administrativas e agrícolas do campus.
+            </p>
+        </section>
+
+       <!-- GALLERY -->
+<section class="gallery-section">
+
+    <h2 data-key="galleryTitle" >Galeria</h2>
+
+    <div class="swiper mySwiper">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <img src="img/ex1.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="img/mosteiro-cima.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="img/ex1.jpg" alt="">
+            </div>
+            
+            <div class="swiper-slide">
+                <img src="img/mosteiro-cima.jpg" alt="">
+            </div>
+
+        </div>
+
+        <!-- SETAS -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- BOLINHAS -->
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+        <!-- VIDEO -->
+        <section class="video-section">
+        <h2 data-key="videoTitle">Vídeo de Apresentação</h2>
+
+        <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/SQd7RRqaA8w"
+            title="Vídeo da Entrada"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+        </div>
+        </section>
+
+        <!-- EXTRA INFO -->
+        <section class="info-cards">
+
+            <div class="card">
+                <h3 data-key="card1Title">Ambiente</h3>
+                <p data-key="card1Text">
+                O campus combina natureza, agricultura e património histórico, 
+                criando um ambiente único de aprendizagem prática.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 data-key="card2Title">Localização</h3>
+                <p data-key="card2Text" >
+                A Escola Profissional Agrícola Conde de São Bento localiza-se e
+                m Santo Tirso, no distrito do Porto, integrada num espaço histórico 
+                rodeado por áreas verdes e agrícolas.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 data-key="card3Title">Património</h3>
+                
+            <p data-key="card3Text">
+             O espaço escolar integra edifícios históricos ligados ao antigo 
+             Mosteiro de São Bento, um marco importante da região.
+            </p>
+            
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+const swiper = new Swiper(".mySwiper", {
+
+    loop: true,
+
+    spaceBetween: 20,
+
+    centeredSlides: true,
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+});
+</script>
+
+ <!-- Secção linguas -->
+<script>
+
+const translations = {
+
+    pt: {
+
+    heroTitle:
+   "Escola Profissional Agrícola<br>Conde de São Bento",
+
+    heroSubtitle:
+    "Entrada Principal",
+
+    welcomeTitle:
+    "Bem-vindo à EPACSB!",
+
+    welcomeText:
+    "A entrada principal da Escola Profissional Agrícola Conde de São Bento representa o primeiro contacto com um espaço marcado pela tradição agrícola, património histórico e ensino prático.",
+
+    galleryTitle:
+    "Galeria",
+
+    videoTitle:
+    "Vídeo de Apresentação",
+
+    card1Title:
+    "Ambiente",
+
+    card1Text:
+    "O campus combina natureza, agricultura e património histórico, criando um ambiente único de aprendizagem prática.",
+
+    card2Title:
+    "Localização",
+
+    card2Text:
+    "A Escola Profissional Agrícola Conde de São Bento localiza-se em Santo Tirso, no distrito do Porto, integrada num espaço histórico rodeado por áreas verdes e agrícolas.",
+
+    card3Title:
+    "Património",
+
+    card3Text:
+    "O espaço escolar integra edifícios históricos ligados ao antigo Mosteiro de São Bento, um marco importante da região."
+
+},
+
+en: {
+
+    heroTitle:
+    "Agricultural Professional School<br>Conde de São Bento",
+
+    heroSubtitle:
+    "Main Entrance",
+
+    welcomeTitle:
+    "Welcome to EPACSB!",
+
+    welcomeText:
+    "The main entrance of the Agricultural Professional School Conde de São Bento represents the first contact with a space marked by agricultural tradition, historical heritage and practical education.",
+
+    galleryTitle:
+    "Gallery",
+
+    videoTitle:
+    "Presentation Video",
+
+    card1Title:
+    "Environment",
+
+    card1Text:
+    "The campus combines nature, agriculture and historical heritage, creating a unique learning environment.",
+
+    card2Title:
+    "Location",
+
+    card2Text:
+    "The Agricultural Professional School Conde de São Bento is located in Santo Tirso, Porto District, surrounded by green and agricultural areas.",
+
+    card3Title:
+    "Heritage",
+
+    card3Text:
+    "The school integrates historical buildings linked to the former Monastery of São Bento, an important regional landmark."
+
+},
+
+fr: {
+
+    heroTitle:
+    "École Professionnelle Agricole<br>Conde de São Bento",
+
+    heroSubtitle:
+    "Entrée Principale",
+
+    welcomeTitle:
+    "Bienvenue à l'EPACSB !",
+
+    welcomeText:
+    "L'entrée principale de l'École Professionnelle Agricole Conde de São Bento représente le premier contact avec un espace marqué par la tradition agricole, le patrimoine historique et l'enseignement pratique.",
+
+    galleryTitle:
+    "Galerie",
+
+    videoTitle:
+    "Vidéo de Présentation",
+
+    card1Title:
+    "Environnement",
+
+    card1Text:
+    "Le campus combine nature, agriculture et patrimoine historique, créant un environnement unique pour l'apprentissage pratique.",
+
+    card2Title:
+    "Localisation",
+
+    card2Text:
+    "L'École Professionnelle Agricole Conde de São Bento est située à Santo Tirso, dans le district de Porto, entourée d'espaces verts et agricoles.",
+
+    card3Title:
+    "Patrimoine",
+
+    card3Text:
+    "L'établissement intègre des bâtiments historiques liés à l'ancien Monastère de São Bento, un repère important de la région."
+
+}
+
+};
+
+function changeLanguage(language){
+
+    document.querySelectorAll("[data-key]").forEach(element => {
+
+        const key = element.getAttribute("data-key");
+
+        element.innerHTML = translations[language][key];
+
+    });
+
+}
+
+</script>
+</body>
+</html>
