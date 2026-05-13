@@ -28,7 +28,7 @@ body{
 /* HERO */
 
 .hero{
-    height:auto;
+    min-height:50svh;
     background-image:url("img/entrada-bg.jpg");
     background-size:cover;
     background-position:center;
