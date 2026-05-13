@@ -82,21 +82,14 @@ body{
 .overlay{
 
     width:100%;
-
     background:rgba(34, 153, 54, 0.781);
-
     display:flex;
     flex-direction:column;
-
     align-items:center;
     justify-content:center;
-
     text-align:center;
-
     padding:80px 20px 50px;
-
     gap:14px;
-
     color:white;
 }
 
