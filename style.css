@@ -305,3 +305,76 @@ h2{
 
     transform:translateY(-2px);
 }
+
+/* ESPAÇOS DA ESCOLA CSS */
+.campus-icon{
+
+    font-size:3rem;
+
+    padding-top:30px;
+
+    text-align:center;
+}
+
+/* CAMPUS */
+
+.campus-section{
+
+    margin-top:70px;
+}
+
+.campus-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:24px;
+}
+
+.campus-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+
+    transition:0.3s ease;
+
+    border:1px solid rgba(0,0,0,0.05);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:25px;
+}
+
+.campus-card:hover{
+
+    transform:translateY(-5px);
+}
+
+.campus-content h3{
+
+    color:var(--main-green);
+
+    margin-bottom:10px;
+
+    font-size:1.3rem;
+}
+
+.campus-content p{
+
+    color:#2f5e2f;
+
+    line-height:1.6;
+}
+
