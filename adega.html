@@ -11,7 +11,9 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -23,6 +25,7 @@
 
     <div class="overlay">
 
+
         <h1 data-key="heroTitle">
             Adega
         </h1>
@@ -31,19 +34,27 @@
             Escola Profissional Agrícola Conde de São Bento
         </p>
 
-        <img src="img/logo_escola.png" alt="Logo" class="logo">
 
-        <!-- LANGUAGES -->
+        <a href="index.html">
+
+            <img src="img/logo_escola.png"
+                 alt="Logo EPACSB"
+                 class="logo">
+
+        </a>
 
         <div class="language-switcher">
+
 
             <button onclick="changeLanguage('pt')">
                 PT
             </button>
 
+
             <button onclick="changeLanguage('en')">
                 EN
             </button>
+
 
             <button onclick="changeLanguage('fr')">
                 FR
@@ -55,95 +66,236 @@
 
 </header>
 
+
 <!-- MAIN -->
 
 <main class="container">
 
-    <!-- INTRO -->
+<!-- INTRO -->
 
-    <section class="info-section">
+<section class="info-section">
 
-        <h2 data-key="introTitle">
-            Sobre a Adega
-        </h2>
 
-        <p data-key="introText">
-            Espaço dedicado à tradição vínica e à aprendizagem prática agrícola.
+    <h2 data-key="adegaIntroTitle">
+        Sobre a Adega
+    </h2>
+
+
+    <p data-key="adegaIntroText">
+
+        A Adega da Escola Profissional Agrícola Conde de São Bento é um espaço dedicado à aprendizagem prática na área da viticultura e produção agrícola.
+
+        Integrada num ambiente escolar marcado pela tradição agrícola, permite aos alunos conhecer processos associados à produção vínica e contactar com equipamentos e técnicas utilizadas nesta área.
+
+    </p>
+
+</section>
+
+<!-- GALERIA -->
+
+<section class="gallery-section">
+
+<h2 data-key="galleryTitle">
+    Galeria
+</h2>
+
+
+<div class="swiper mySwiper">
+
+<div class="swiper-wrapper">
+
+
+<div class="swiper-slide">
+
+<img src="img/adega1.jpg" 
+     alt="Interior da Adega">
+
+</div>
+
+
+<div class="swiper-slide">
+
+<img src="img/adega3.jpg" 
+     alt="Equipamentos da Adega">
+
+</div>
+
+
+<div class="swiper-slide">
+
+<img src="img/adega2.jpg" 
+     alt="Produção vínica">
+
+</div>
+
+
+<div class="swiper-slide">
+
+<img src="img/adega5.jpg" 
+     alt="Espaço técnico da Adega">
+
+</div>
+
+
+<div class="swiper-slide">
+
+<img src="img/adega4.jpg" 
+     alt="Processo de produção">
+
+</div>
+
+
+</div>
+
+
+<div class="swiper-button-next"></div>
+
+<div class="swiper-button-prev"></div>
+
+<div class="swiper-pagination"></div>
+
+
+</div>
+
+</section>
+
+<!-- CARDS -->
+
+<section class="info-cards">
+
+
+
+    <div class="card">
+
+
+        <h3 data-key="wineTitle">
+            🍇 Tradição Vínica
+        </h3>
+
+        <p data-key="wineText">
+
+            A adega representa a ligação da escola à viticultura, permitindo explorar conhecimentos relacionados com a produção de vinho e práticas agrícolas.
+
         </p>
 
-    </section>
+    </div>
 
-    <!-- PLACEHOLDER -->
+    <div class="card">
 
-    <section class="info-cards">
 
-        <div class="card">
+        <h3 data-key="learningTitle">
+            🌱 Aprendizagem Prática
+        </h3>
 
-            <h3 data-key="devTitle">
-                Conteúdo em Desenvolvimento
-            </h3>
+        <p data-key="learningText">
 
-            <p data-key="devText">
-                Em breve estarão disponíveis mais informações, imagens e conteúdos interativos sobre este espaço.
-            </p>
+            O espaço proporciona aos alunos contacto direto com técnicas, equipamentos e processos associados à produção agrícola.
 
-        </div>
+        </p>
 
-    </section>
+    </div>
 
-    <!-- NAVEGAÇÃO -->
 
-    <section class="campus-section">
+    <div class="card">
 
-        <h2 data-key="exploreTitle">
-            Explorar Mais
-        </h2>
 
-        <div class="campus-grid">
+        <h3 data-key="heritageAdegaTitle">
+            🏫 Património e Ensino
+        </h3>
 
-            <a href="estufa.html" class="campus-card">
 
-                <div class="campus-icon">
-                    🌱
-                </div>
+        <p data-key="heritageAdegaText">
 
-                <div class="campus-content">
+            Integrada no campus da escola, a adega junta o património histórico de São Bento com uma abordagem moderna de formação profissional.
 
-                    <h3 data-key="greenhouseTitle">
-                        Estufa
-                    </h3>
+        </p>
 
-                </div>
+    </div>
 
-            </a>
+</section>
 
-            <a href="index.html" class="campus-card">
+<!-- NAVEGAÇÃO -->
 
-                <div class="campus-icon">
-                    🏫
-                </div>
+<section class="campus-section">
 
-                <div class="campus-content">
 
-                    <h3 data-key="homeTitle">
-                        Entrada Principal
-                    </h3>
+<h2 data-key="exploreTitle">
+    Explorar Mais
+</h2>
 
-                </div>
+<div class="campus-grid">
 
-            </a>
+<a href="estufa.html" class="campus-card">
 
-        </div>
 
-    </section>
+    <div class="campus-icon">
+        🌱
+    </div>
+
+    <div class="campus-content">
+
+
+        <h3 data-key="estufaTitle">
+            Estufa
+        </h3>
+
+    </div>
+
+</a>
+
+<a href="index.html" class="campus-card">
+
+
+    <div class="campus-icon">
+        🏫
+    </div>
+
+    <div class="campus-content">
+
+
+        <h3 data-key="homeTitle">
+            Entrada Principal
+        </h3>
+
+    </div>
+
+</a>
+
+</div>
+</section>
 
 </main>
 
-<!-- SCRIPTS -->
-
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+<script src="translations.js"></script>
+
 <script src="script.js"></script>
+
+
+<script>
+
+const swiper = new Swiper(".mySwiper", {
+
+loop:true,
+
+spaceBetween:20,
+
+centeredSlides:true,
+
+pagination:{
+el:".swiper-pagination",
+clickable:true,
+},
+
+navigation:{
+nextEl:".swiper-button-next",
+prevEl:".swiper-button-prev",
+},
+
+});
+
+</script>
 
 </body>
 

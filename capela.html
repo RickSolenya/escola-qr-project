@@ -3,149 +3,252 @@
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capela - EPACSB</title>
 
-    <title>Capela - EPACSB</title>
+<link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
-<body>
 
-<!-- HERO -->
+<body>
 
 <header class="hero">
 
-    <div class="overlay">
+<div class="overlay">
 
-        <h1 data-key="heroTitle">
-            Capela
-        </h1>
+<h1 data-key="capelaTitle">
+Capela
+</h1>
 
-        <p data-key="heroSubtitle">
-            Escola Profissional Agrícola Conde de São Bento
-        </p>
+<p data-key="heroSubtitle">
+Escola Profissional Agrícola Conde de São Bento
+</p>
 
-        <img src="img/logo_escola.png" 
-                 alt="Logo EPACSB" 
-                 class="logo">
+<a href="index.html">
+<img src="img/logo_escola.png" alt="Logo EPACSB" class="logo">
+</a>
 
-        <!-- LANGUAGES -->
+<div class="language-switcher">
 
-        <div class="language-switcher">
+<button onclick="changeLanguage('pt')">PT</button>
+<button onclick="changeLanguage('en')">EN</button>
+<button onclick="changeLanguage('fr')">FR</button>
 
-            <button onclick="changeLanguage('pt')">
-                PT
-            </button>
+</div>
 
-            <button onclick="changeLanguage('en')">
-                EN
-            </button>
-
-            <button onclick="changeLanguage('fr')">
-                FR
-            </button>
-
-        </div>
-
-    </div>
+</div>
 
 </header>
 
-<!-- MAIN -->
+
 
 <main class="container">
 
-    <!-- INTRO -->
 
-    <section class="info-section">
+<section class="info-section">
 
-        <h2 data-key="introTitle">
-            Sobre a Capela
-        </h2>
+<h2 data-key="introTitle">
+Sobre a Capela
+</h2>
 
-        <p data-key="introText">
-            Espaço histórico e religioso integrado no património da escola.
-        </p>
+<p data-key="introText">
+A Capela da Escola Profissional Agrícola Conde de São Bento encontra-se integrada no conjunto histórico do antigo Mosteiro de São Bento.
+</p>
 
-    </section>
+</section>
 
-    <!-- PLACEHOLDER -->
 
-    <section class="info-cards">
 
-        <div class="card">
+<section class="gallery-section">
 
-            <h3 data-key="devTitle">
-                Conteúdo em Desenvolvimento
-            </h3>
+<h2 data-key="galleryTitle">
+Galeria
+</h2>
 
-            <p data-key="devText">
-                Em breve estarão disponíveis mais informações, imagens e conteúdos interativos sobre este espaço.
-            </p>
 
-        </div>
+<div class="swiper mySwiper">
 
-    </section>
+<div class="swiper-wrapper">
 
-    <!-- NAVEGAÇÃO -->
+    <div class="swiper-slide">
+<img src="img/capela1.jpg" alt="Interior da Capela 1">
+</div>
 
-    <section class="campus-section">
+<div class="swiper-slide">
+<img src="img/capela4.jpg" alt="Interior da Capela">
+</div>
 
-        <h2 data-key="exploreTitle">
-            Explorar Mais
-        </h2>
 
-        <div class="campus-grid">
+<div class="swiper-slide">
+<img src="img/capela2.jpg" alt="Teto da Capela">
+</div>
 
-            <a href="salas.html" class="campus-card">
 
-                <div class="campus-icon">
-                    📚
-                </div>
+<div class="swiper-slide">
+<img src="img/capela3.jpg" alt="Painéis da Capela">
+</div>
 
-                <div class="campus-content">
 
-                    <h3 data-key="classroomsTitle">
-                        Salas de Aula
-                    </h3>
+<div class="swiper-slide">
+<img src="img/capela5.jpg" alt="Detalhes artísticos">
+</div>
 
-                </div>
 
-            </a>
+<div class="swiper-slide">
+<img src="img/capela6.jpg" alt="Azulejos da Capela">
+</div>
 
-            <a href="index.html" class="campus-card">
 
-                <div class="campus-icon">
-                    🏫
-                </div>
+</div>
 
-                <div class="campus-content">
 
-                    <h3 data-key="homeTitle">
-                        Entrada Principal
-                    </h3>
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-pagination"></div>
 
-                </div>
 
-            </a>
+</div>
 
-        </div>
+</section>
 
-    </section>
+
+
+
+<section class="info-cards">
+
+
+<div class="card">
+
+<h3 data-key="heritageTitle">
+🏛️ Património Histórico
+</h3>
+
+<p data-key="heritageText">
+A capela integra uma das zonas históricas do antigo Mosteiro de São Bento.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3 data-key="artTitle">
+🎨 Frescos e Arte
+</h3>
+
+<p data-key="artText">
+O espaço conserva elementos artísticos e decorativos de grande valor.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3 data-key="educationTitle">
+📚 Espaço Educativo
+</h3>
+
+<p data-key="educationText">
+A capela liga o património histórico ao ambiente educativo atual.
+</p>
+
+</div>
+
+
+</section>
+
+
+
+
+<section class="campus-section">
+
+<h2 data-key="exploreTitle">
+Explorar Mais
+</h2>
+
+
+<div class="campus-grid">
+
+
+<a href="salas.html" class="campus-card">
+
+<div class="campus-icon">📚</div>
+
+<div class="campus-content">
+
+<h3 data-key="classroomsTitle">
+Salas de Aula
+</h3>
+
+</div>
+
+</a>
+
+
+
+<a href="index.html" class="campus-card">
+
+<div class="campus-icon">🏫</div>
+
+<div class="campus-content">
+
+<h3 data-key="homeTitle">
+Entrada Principal
+</h3>
+
+</div>
+
+</a>
+
+
+</div>
+
+</section>
+
 
 </main>
 
-<!-- SCRIPTS -->
+
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+<script src="translations.js"></script>
+
 <script src="script.js"></script>
+
+
+<script>
+
+const swiper = new Swiper(".mySwiper", {
+
+loop:true,
+
+spaceBetween:20,
+
+pagination:{
+el:".swiper-pagination",
+clickable:true,
+},
+
+navigation:{
+nextEl:".swiper-button-next",
+prevEl:".swiper-button-prev",
+},
+
+});
+
+</script>
+
 
 </body>
 
