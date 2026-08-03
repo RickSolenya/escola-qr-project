@@ -3,151 +3,370 @@
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Salas de Aula - EPACSB</title>
+<title>Salas de Aula - EPACSB</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
+
 <body>
+
 
 <!-- HERO -->
 
 <header class="hero">
 
-    <div class="overlay">
+<div class="overlay">
 
-        <h1 data-key="heroTitle">
-            Salas de Aula
-        </h1>
 
-        <p data-key="heroSubtitle">
-            Escola Profissional Agrícola Conde de São Bento
-        </p>
+<h1 data-key="salasTitle">
+Salas de Aula
+</h1>
 
-        <img src="img/logo_escola.png" 
-                 alt="Logo EPACSB" 
-                 class="logo"><img src="img/logo_escola.png" 
-                 alt="Logo EPACSB" 
-                 class="logo">
 
-        <!-- LANGUAGES -->
+<p data-key="heroSubtitle">
+Escola Profissional Agrícola Conde de São Bento
+</p>
 
-        <div class="language-switcher">
 
-            <button onclick="changeLanguage('pt')">
-                PT
-            </button>
+<a href="index.html">
 
-            <button onclick="changeLanguage('en')">
-                EN
-            </button>
+<img src="img/logo_escola.png"
+alt="Logo EPACSB"
+class="logo">
 
-            <button onclick="changeLanguage('fr')">
-                FR
-            </button>
+</a>
 
-        </div>
 
-    </div>
+
+<div class="language-switcher">
+
+
+<button onclick="changeLanguage('pt')">
+PT
+</button>
+
+
+<button onclick="changeLanguage('en')">
+EN
+</button>
+
+
+<button onclick="changeLanguage('fr')">
+FR
+</button>
+
+
+</div>
+
+
+</div>
 
 </header>
 
-<!-- MAIN -->
+
+
+
 
 <main class="container">
 
-    <!-- INTRO -->
 
-    <section class="info-section">
 
-        <h2 data-key="introTitle">
-            Sobre as Salas
-        </h2>
+<!-- INTRO -->
 
-        <p data-key="introText">
-            Espaços dedicados ao ensino, aprendizagem e formação académica dos alunos.
-        </p>
 
-    </section>
+<section class="info-section">
 
-    <!-- PLACEHOLDER -->
 
-    <section class="info-cards">
+<h2 data-key="salasIntroTitle">
+Sobre as Salas de Aula
+</h2>
 
-        <div class="card">
 
-            <h3 data-key="devTitle">
-                Conteúdo em Desenvolvimento
-            </h3>
+<p data-key="salasIntroText">
 
-            <p data-key="devText">
-                Em breve estarão disponíveis mais informações, imagens e conteúdos interativos sobre estes espaços.
-            </p>
+As salas de aula da Escola Profissional Agrícola Conde de São Bento constituem espaços dedicados à aprendizagem teórica e ao desenvolvimento das competências dos alunos.
 
-        </div>
+</p>
 
-    </section>
 
-    <!-- NAVEGAÇÃO -->
+</section>
 
-    <section class="campus-section">
 
-        <h2 data-key="exploreTitle">
-            Explorar Mais
-        </h2>
 
-        <div class="campus-grid">
 
-            <a href="salaLED.html" class="campus-card">
 
-                <div class="campus-icon">
-                    💡
-                </div>
 
-                <div class="campus-content">
 
-                    <h3 data-key="ledTitle">
-                        Sala LED
-                    </h3>
+<!-- GALERIA -->
 
-                </div>
 
-            </a>
+<section class="gallery-section">
 
-            <a href="index.html" class="campus-card">
 
-                <div class="campus-icon">
-                    🏫
-                </div>
+<h2 data-key="galleryTitle">
+Galeria
+</h2>
 
-                <div class="campus-content">
 
-                    <h3 data-key="homeTitle">
-                        Entrada Principal
-                    </h3>
 
-                </div>
+<div class="swiper mySwiper">
 
-            </a>
 
-        </div>
+<div class="swiper-wrapper">
 
-    </section>
+
+
+<div class="swiper-slide">
+
+<img src="img/sala1.jpg"
+alt="Exterior das Salas de Aula">
+
+</div>
+
+
+
+<div class="swiper-slide">
+
+<img src="img/sala2.jpg"
+alt="Sala de Aula">
+
+</div>
+
+
+
+<div class="swiper-slide">
+
+<img src="img/sala3.jpg"
+alt="Aula prática">
+
+</div>
+
+
+
+</div>
+
+
+
+<div class="swiper-button-next"></div>
+
+<div class="swiper-button-prev"></div>
+
+<div class="swiper-pagination"></div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- CARDS -->
+
+
+<section class="info-cards">
+
+
+
+<div class="card">
+
+
+<h3 data-key="learningClassTitle">
+📚 Aprendizagem
+</h3>
+
+
+<p data-key="learningClassText">
+
+Espaços preparados para apoiar o ensino das diferentes disciplinas e áreas de formação.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+
+<h3 data-key="technologyTitle">
+💻 Tecnologia e Recursos
+</h3>
+
+
+<p data-key="technologyText">
+
+As salas integram equipamentos e recursos educativos que ajudam no desenvolvimento das competências dos alunos.
+
+</p>
+
+
+</div>
+
+
+<div class="card">
+
+
+<h3 data-key="professionalTitle">
+🎓 Formação Profissional
+</h3>
+
+
+<p data-key="professionalText">
+
+Ambientes direcionados para uma aprendizagem completa, combinando conhecimento teórico e preparação prática.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+<!-- NAVEGAÇÃO -->
+
+
+<section class="campus-section">
+
+
+<h2 data-key="exploreTitle">
+Explorar Mais
+</h2>
+
+
+<div class="campus-grid">
+
+
+<a href="salaLED.html" class="campus-card">
+
+
+<div class="campus-icon">
+💡
+</div>
+
+
+<div class="campus-content">
+
+
+<h3 data-key="ledTitle">
+Sala LED
+</h3>
+
+
+</div>
+
+
+</a>
+
+
+
+
+
+
+
+<a href="index.html" class="campus-card">
+
+
+<div class="campus-icon">
+🏫
+</div>
+
+
+<div class="campus-content">
+
+
+<h3 data-key="homeTitle">
+Entrada Principal
+</h3>
+
+
+</div>
+
+
+</a>
+
+
+
+
+
+</div>
+
+
+</section>
+
+
 
 </main>
 
-<!-- SCRIPTS -->
+
+
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+<script src="translations.js"></script>
+
 <script src="script.js"></script>
+
+
+
+<script>
+
+const swiper = new Swiper(".mySwiper", {
+
+
+loop:true,
+
+spaceBetween:20,
+
+centeredSlides:true,
+
+
+pagination:{
+
+el:".swiper-pagination",
+
+clickable:true,
+
+},
+
+
+navigation:{
+
+nextEl:".swiper-button-next",
+
+prevEl:".swiper-button-prev",
+
+},
+
+
+});
+
+
+</script>
+
+
 
 </body>
 

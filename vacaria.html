@@ -3,15 +3,17 @@
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Vacaria - EPACSB</title>
+<title>Vacaria e Animais - EPACSB</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -21,131 +23,291 @@
 
 <header class="hero">
 
-    <div class="overlay">
+<div class="overlay">
 
-        <h1 data-key="heroTitle">
-            Vacaria
-        </h1>
 
-        <p data-key="heroSubtitle">
-            Escola Profissional Agrícola Conde de São Bento
-        </p>
+<h1 data-key="vacariaTitle">
+Vacaria e Animais
+</h1>
 
-        <img src="img/logo_escola.png" 
-                 alt="Logo EPACSB" 
-                 class="logo">
 
-        <!-- LANGUAGES -->
+<p data-key="heroSubtitle">
+Escola Profissional Agrícola Conde de São Bento
+</p>
 
-        <div class="language-switcher">
 
-            <button onclick="changeLanguage('pt')">
-                PT
-            </button>
+<a href="index.html">
 
-            <button onclick="changeLanguage('en')">
-                EN
-            </button>
+<img src="img/logo_escola.png"
+alt="Logo EPACSB"
+class="logo">
 
-            <button onclick="changeLanguage('fr')">
-                FR
-            </button>
+</a>
+<div class="language-switcher">
 
-        </div>
 
-    </div>
+<button onclick="changeLanguage('pt')">
+PT
+</button>
+
+
+<button onclick="changeLanguage('en')">
+EN
+</button>
+
+
+<button onclick="changeLanguage('fr')">
+FR
+</button>
+
+</div>
+
+</div>
 
 </header>
 
-<!-- MAIN -->
-
 <main class="container">
 
-    <!-- INTRO -->
+<!-- INTRO -->
 
-    <section class="info-section">
+<section class="info-section">
 
-        <h2 data-key="introTitle">
-            Sobre a Vacaria
-        </h2>
 
-        <p data-key="introText">
-            Espaço dedicado às atividades pecuárias e à aprendizagem prática agrícola.
-        </p>
+<h2 data-key="vacariaIntroTitle">
+Sobre a Vacaria e Animais
+</h2>
 
-    </section>
 
-    <!-- PLACEHOLDER -->
+<p data-key="vacariaIntroText">
 
-    <section class="info-cards">
+A área de animais da Escola Profissional Agrícola Conde de São Bento representa uma componente essencial da formação prática dos alunos, permitindo o contacto direto com a atividade pecuária.
 
-        <div class="card">
+</p>
 
-            <h3 data-key="devTitle">
-                Conteúdo em Desenvolvimento
-            </h3>
 
-            <p data-key="devText">
-                Em breve estarão disponíveis mais informações, imagens e conteúdos interativos sobre este espaço.
-            </p>
+</section>
 
-        </div>
+<!-- GALERIA -->
 
-    </section>
+<section class="gallery-section">
 
-    <!-- NAVEGAÇÃO -->
+<h2 data-key="galleryTitle">
+    Galeria
+</h2>
 
-    <section class="campus-section">
 
-        <h2 data-key="exploreTitle">
-            Explorar Mais
-        </h2>
+<div class="swiper mySwiper">
 
-        <div class="campus-grid">
+<div class="swiper-wrapper">
 
-            <a href="salas.html" class="campus-card">
 
-                <div class="campus-icon">
-                    📚
-                </div>
+<div class="swiper-slide">
+<img src="img/vacaria1.jpg" alt="Vacaria">
+</div>
 
-                <div class="campus-content">
 
-                    <h3 data-key="classroomsTitle">
-                        Salas de Aula
-                    </h3>
+<div class="swiper-slide">
+<img src="img/vacaria2.jpg" alt="Instalações da Vacaria">
+</div>
 
-                </div>
+<div class="swiper-slide">
+<img src="img/vacaria3.jpg" alt="Instalações da Vacaria">
+</div>
 
-            </a>
 
-            <a href="index.html" class="campus-card">
+<div class="swiper-slide">
+<img src="img/vacaria4.jpg" alt="Animais da escola">
+</div>
 
-                <div class="campus-icon">
-                    🏫
-                </div>
+<div class="swiper-slide">
+<img src="img/vacaria5.jpg" alt="Animais da escola">
+</div>
 
-                <div class="campus-content">
+<div class="swiper-slide">
+<img src="img/vacaria6.jpg" alt="Animais da escola">
+</div>
 
-                    <h3 data-key="homeTitle">
-                        Entrada Principal
-                    </h3>
+<div class="swiper-slide">
+<img src="img/vacaria7.jpg" alt="Animais">
+</div>
 
-                </div>
 
-            </a>
+<div class="swiper-slide">
+<img src="img/vacaria8.jpg" alt="Animais da escola">
+</div>
 
-        </div>
 
-    </section>
+<div class="swiper-slide">
+<img src="img/vacaria9.jpg" alt="Contacto com a natureza">
+</div>
+
+
+</div>
+
+
+<div class="swiper-button-next"></div>
+
+<div class="swiper-button-prev"></div>
+
+<div class="swiper-pagination"></div>
+
+
+</div>
+
+</section>
+
+
+<!-- CARDS -->
+
+<section class="info-cards">
+
+<div class="card">
+
+<h3 data-key="livestockTitle">
+🐄 Produção Pecuária
+</h3>
+
+
+<p data-key="livestockText">
+
+A vacaria permite aos alunos conhecer práticas relacionadas com a criação e acompanhamento de animais.
+
+</p>
+
+</div>
+
+<div class="card">
+
+
+<h3 data-key="animalLearningTitle">
+🌱 Aprendizagem Prática
+</h3>
+
+
+<p data-key="animalLearningText">
+
+O contacto com os animais complementa a formação dos alunos, aproximando a teoria da realidade agrícola.
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+
+<h3 data-key="animalCareTitle">
+🏡 Bem-estar Animal
+</h3>
+
+
+<p data-key="animalCareText">
+
+Os espaços são preparados para garantir os cuidados necessários aos animais, promovendo boas práticas de maneio.
+
+</p>
+
+</div>
+
+
+</section>
+
+
+<!-- NAVEGAÇÃO -->
+
+<section class="campus-section">
+
+
+<h2 data-key="exploreTitle">
+Explorar Mais
+</h2>
+
+
+<div class="campus-grid">
+
+
+<a href="lagar.html" class="campus-card">
+
+
+<div class="campus-icon">
+🌾
+</div>
+
+
+<div class="campus-content">
+
+
+<h3 data-key="lagarTitle">
+Lagar
+</h3>
+
+</div>
+
+</a>
+
+<a href="index.html" class="campus-card">
+
+
+<div class="campus-icon">
+🏫
+</div>
+
+<div class="campus-content">
+
+
+<h3 data-key="homeTitle">
+Entrada Principal
+</h3>
+
+</div>
+
+</a>
+
+
+
+</div>
+
+
+</section>
+
+
 
 </main>
 
-<!-- SCRIPTS -->
-
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+<script src="translations.js"></script>
+
 <script src="script.js"></script>
+
+
+<script>
+
+const swiper = new Swiper(".mySwiper", {
+
+loop:true,
+
+spaceBetween:20,
+
+centeredSlides:true,
+
+
+pagination:{
+el:".swiper-pagination",
+clickable:true,
+},
+
+
+navigation:{
+nextEl:".swiper-button-next",
+prevEl:".swiper-button-prev",
+},
+
+
+});
+
+</script>
+
 
 </body>
 
