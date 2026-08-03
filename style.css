@@ -318,6 +318,8 @@ h2{
 
 /* CAMPUS */
 
+/* CAMPUS */
+
 .campus-section{
 
     margin-top:70px;
@@ -362,6 +364,13 @@ h2{
     transform:translateY(-5px);
 }
 
+.campus-icon{
+
+    font-size:3rem;
+
+    margin-bottom:15px;
+}
+
 .campus-content h3{
 
     color:var(--main-green);
@@ -376,5 +385,27 @@ h2{
     color:#2f5e2f;
 
     line-height:1.6;
+}
+
+/* TABLET */
+
+@media(min-width:768px){
+
+    .campus-grid{
+
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+/* DESKTOP */
+
+@media(min-width:1100px){
+
+    .campus-grid{
+
+        grid-template-columns:repeat(3,1fr);
+    }
+
 }
 
