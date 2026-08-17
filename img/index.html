@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada - Escola Agrícola</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+     />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+   <!-- Header / MEnu -->
+
+<header class="hero">
+
+    <div class="overlay">
+
+        <h1>
+            Escola Profissional Agrícola
+            <br>
+            Conde de São Bento
+        </h1>
+
+        <p>
+            Entrada Principal
+        </p>
+
+        <a href="index.html">
+
+            <img src="img/logo_escola.png" 
+                 alt="Logo EPACSB" 
+                 class="logo">
+
+        </a>
+
+        <div class="language-switcher">
+
+            <button onclick="changeLanguage('pt')">
+                PT
+            </button>
+
+            <button onclick="changeLanguage('en')">
+                EN
+            </button>
+
+            <button onclick="changeLanguage('fr')">
+                FR
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+    <!-- CONTENT -->
+    <main class="container">
+
+        <section class="info-section">
+            <h2 data-key="welcomeTitle">Bem-vindo à EPACSB!</h2>
+
+            <p data-key="welcomeText">
+              A entrada principal da Escola Profissional Agrícola Conde de 
+              São Bento representa o primeiro contacto com um espaço marcado 
+              pela tradição agrícola, património histórico e ensino prático. 
+              A partir deste ponto é possível aceder às diferentes áreas 
+              educativas, administrativas e agrícolas do campus.
+            </p>
+        </section>
+
+       <!-- GALLERY -->
+<section class="gallery-section">
+
+    <h2 data-key="galleryTitle" >Galeria</h2>
+
+    <div class="swiper mySwiper">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <img src="img/ex1.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="img/mosteiro-cima.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="img/ex2.jpg" alt="">
+            </div>
+            
+            <div class="swiper-slide">
+                <img src="img/ex3.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="img/ex4.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/ex5.jpg" alt="">
+            </div>
+
+        </div>
+
+        <!-- SETAS -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- BOLINHAS -->
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+        <!-- VIDEO -->
+        <section class="video-section">
+        <h2 data-key="videoTitle">Vídeo de Apresentação</h2>
+
+        <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/SQd7RRqaA8w"
+            title="Vídeo da Entrada"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+        </div>
+        </section>
+
+        <!-- EXTRA INFO -->
+        <section class="info-cards">
+
+            <div class="card">
+                <h3 data-key="card1Title">Ambiente</h3>
+                <p data-key="card1Text">
+                O campus combina natureza, agricultura e património histórico, 
+                criando um ambiente único de aprendizagem prática.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 data-key="card2Title">Localização</h3>
+                <p data-key="card2Text" >
+                A Escola Profissional Agrícola Conde de São Bento localiza-se e
+                m Santo Tirso, no distrito do Porto, integrada num espaço histórico 
+                rodeado por áreas verdes e agrícolas.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 data-key="card3Title">Património</h3>
+                
+            <p data-key="card3Text">
+             O espaço escolar integra edifícios históricos ligados ao antigo 
+             Mosteiro de São Bento, um marco importante da região.
+            </p>
+            
+            </div>
+        </section>
+
+        <!-- ESPAÇOS DISPONIVEIS -->
+
+       <!-- CAMPUS -->
+        
+
+<section class="campus-section">
+
+    <h2 data-key="campusTitle">
+        Explora o Campus!
+    </h2>
+    <!-- MAPA DA ESCOLA -->
+
+<section class="map-section">
+
+    <div class="map-container">
+
+        <img src="img/Planta-Escola.png" 
+             alt="Mapa da Escola EPACSB">
+
+    </div>
+
+
+
+</section>
+
+    <div class="campus-grid">
+
+        <!-- ADEGA -->
+
+        <a href="adega.html" class="campus-card">
+
+            <div class="campus-icon">🍇</div>
+
+            <div class="campus-content">
+
+                <h3 data-key="adegaTitle">
+                    Adega
+                </h3>
+
+                <p data-key="adegaText">
+                    Conheça o espaço dedicado à tradição vínica e produção agrícola.
+                </p>
+
+            </div>
+
+        </a>
+
+        <!-- ESTUFA -->
+
+        <a href="estufa.html" class="campus-card">
+
+            <div class="campus-icon">🌱</div>
+
+            <div class="campus-content">
+
+                <h3 data-key="estufaTitle">
+                    Estufa
+                </h3>
+
+                <p data-key="estufaText">
+                    Explore o espaço de cultivo protegido e aprendizagem agrícola.
+                </p>
+
+            </div>
+
+        </a>
+
+        <!-- VACARIA -->
+
+        <a href="vacaria.html" class="campus-card">
+
+            <div class="campus-icon">🐄</div>
+
+            <div class="campus-content">
+
+                <h3 data-key="vacariaTitle">
+                    Vacaria e Animais
+                </h3>
+
+                <p data-key="vacariaText">
+                    Descubra a área pecuária e os equipamentos técnicos associados.
+                </p>
+
+            </div>
+
+        </a>
+
+
+        <!-- OFICINAS -->
+
+<a href="oficinas.html" class="campus-card">
+
+    <div class="campus-icon">🏭</div>
+
+    <div class="campus-content">
+
+        <h3 data-key="oficinasTitle">
+            Oficinas e Espaços Técnicos
+        </h3>
+
+        <p data-key="oficinasText">
+            Explore os espaços técnicos e pedagógicos ligados à formação prática.
+        </p>
+
+    </div>
+
+</a>
+        <!-- CAPELA -->
+
+        <a href="capela.html" class="campus-card">
+
+            <div class="campus-icon">⛪</div>
+
+            <div class="campus-content">
+
+                <h3 data-key="capelaTitle">
+                    Capela
+                </h3>
+
+                <p data-key="capelaText">
+                    Visite um dos espaços históricos mais emblemáticos da escola.
+                </p>
+
+            </div>
+
+        </a>
+        
+       <!-- SALA LED -->
+<a href="salaLED.html" class="campus-card">
+
+    <div class="campus-icon">
+        💡
+    </div>
+
+    <div class="campus-content">
+
+        <h3>
+            Sala LED
+        </h3>
+
+        <p>
+            Espaço tecnológico e multimédia da escola.
+        </p>
+
+    </div>
+
+
+<!-- LAGAR -->
+<a href="lagar.html" class="campus-card">
+
+    <div class="campus-icon">
+        🛢️
+    </div>
+
+    <div class="campus-content">
+
+        <h3 data-key="lagarTitle">
+            Lagar
+        </h3>
+
+        <p data-key="lagarText">
+            Explore o espaço ligado à tradição agrícola e produção histórica.
+        </p>
+
+    </div>
+
+</a>
+
+        <!-- SALAS -->
+
+        <a href="salas.html" class="campus-card">
+
+            <div class="campus-icon">📚</div>
+
+            <div class="campus-content">
+
+                <h3 data-key="salasTitle">
+                    Salas de Aula
+                </h3>
+
+                <p data-key="salasText">
+                    Conheça os espaços de aprendizagem e formação académica.
+                </p>
+
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+const swiper = new Swiper(".mySwiper", {
+
+    loop: true,
+
+    spaceBetween: 20,
+
+    centeredSlides: true,
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+});
+</script>
+
+ <!-- Secção linguas tradução -->
+<script>
+
+const translations = {
+
+    pt: {
+
+    heroTitle:
+   "Escola Profissional Agrícola<br>Conde de São Bento",
+
+    heroSubtitle:
+    "Entrada Principal",
+
+    welcomeTitle:
+    "Bem-vindo à EPACSB!",
+
+    welcomeText:
+    " A entrada principal da Escola Profissional Agrícola Conde de São Bento representa o primeiro contacto com um espaço marcado pela tradição agrícola, património histórico e ensino prático.  A partir deste ponto é possível aceder às diferentes áreas educativas, administrativas e agrícolas do campus.",
+
+    galleryTitle:
+    "Galeria",
+
+    videoTitle:
+    "Vídeo de Apresentação",
+
+    card1Title:
+    "Ambiente",
+
+    card1Text:
+    "O campus combina natureza, agricultura e património histórico, criando um ambiente único de aprendizagem prática.",
+
+    card2Title:
+    "Localização",
+
+    card2Text:
+    "A Escola Profissional Agrícola Conde de São Bento localiza-se em Santo Tirso, no distrito do Porto, integrada num espaço histórico rodeado por áreas verdes e agrícolas.",
+
+    card3Title:
+    "Património",
+
+    card3Text:
+    "O espaço escolar integra edifícios históricos ligados ao antigo Mosteiro de São Bento, um marco importante da região.",
+    campusTitle:
+    "Explora o Campus!",
+
+    adegaTitle:
+    "Adega",
+
+    adegaText:
+    "Conheça o espaço dedicado à tradição vínica e produção agrícola.",
+
+    estufaTitle:
+    "Estufa",
+
+    estufaText:
+    "Explore o espaço de cultivo protegido e aprendizagem agrícola.",
+
+    vacariaTitle:
+    "Vacaria e Animais",
+
+    vacariaText:
+    "Descubra a área pecuária e os equipamentos técnicos associados.",
+
+    oficinasTitle:
+    "Oficinas e Espaços Técnicos",
+
+    oficinasText:
+    "Explore os espaços técnicos e pedagógicos ligados à formação prática.",
+
+    capelaTitle:
+    "Capela",
+
+    capelaText:
+    "Visite um dos espaços históricos mais emblemáticos da escola.",
+
+    ledTitle:
+    "Sala LED",
+
+    ledText:
+    "Explore o espaço tecnológico e multimédia da escola.",
+
+    lagarTitle:
+    "Lagar",
+
+    lagarText:
+    "Explore o espaço ligado à tradição agrícola e produção histórica.",
+
+    salasTitle:
+    "Salas de Aula",
+
+    salasText:
+    "Conheça os espaços de aprendizagem e formação académica.",
+
+},
+
+en: {
+
+    heroTitle:
+    "Agricultural Professional School<br>Conde de São Bento",
+
+    heroSubtitle:
+    "Main Entrance",
+
+    welcomeTitle:
+    "Welcome to EPACSB!",
+
+    welcomeText:
+    "The main entrance of the Agricultural Professional School Conde de São Bento represents the first contact with a space marked by agricultural tradition, historical heritage and practical education.",
+
+    galleryTitle:
+    "Gallery",
+
+    videoTitle:
+    "Presentation Video",
+
+    card1Title:
+    "Environment",
+
+    card1Text:
+    "The campus combines nature, agriculture and historical heritage, creating a unique learning environment.",
+
+    card2Title:
+    "Location",
+
+    card2Text:
+    "The Agricultural Professional School Conde de São Bento is located in Santo Tirso, Porto District, surrounded by green and agricultural areas.",
+
+    card3Title:
+    "Heritage",
+
+    card3Text:
+    "The school integrates historical buildings linked to the former Monastery of São Bento, an important regional landmark.",
+    campusTitle:
+    "Explore the Campus!",
+
+    adegaTitle:
+    "Wine Cellar",
+
+    adegaText:
+    "Discover the space dedicated to wine tradition and agricultural production.",
+
+    estufaTitle:
+    "Greenhouse",
+
+    estufaText:
+    "Explore the protected cultivation and agricultural learning space.",
+
+    vacariaTitle:
+    "Dairy Farm and Other Animals",
+
+    vacariaText:
+    "Discover the livestock area and associated technical equipment.",
+
+    oficinasTitle:
+    "Technical Workshops",
+
+    oficinasText:
+    "Explore the technical and pedagogical spaces dedicated to practical training.",
+
+    capelaTitle:
+    "Chapel",
+
+    capelaText:
+    "Visit one of the school's most emblematic historical spaces.",
+
+    ledTitle:
+    "LED Room",
+
+    ledText:
+    "Explore the school's technology and multimedia space.",
+
+    lagarTitle:
+    "Olive Press",
+
+    lagarText:
+    "Explore the space connected to agricultural tradition and historical production.",
+
+    salasTitle:
+    "Classrooms",
+
+    salasText:
+    "Discover the school's learning and academic spaces.",
+
+},
+
+fr: {
+
+    heroTitle:
+    "École Professionnelle Agricole<br>Conde de São Bento",
+
+    heroSubtitle:
+    "Entrée Principale",
+
+    welcomeTitle:
+    "Bienvenue à l'EPACSB !",
+
+    welcomeText:
+    "L'entrée principale de l'École Professionnelle Agricole Conde de São Bento représente le premier contact avec un espace marqué par la tradition agricole, le patrimoine historique et l'enseignement pratique.",
+
+    galleryTitle:
+    "Galerie",
+
+    videoTitle:
+    "Vidéo de Présentation",
+
+    card1Title:
+    "Environnement",
+
+    card1Text:
+    "Le campus combine nature, agriculture et patrimoine historique, créant un environnement unique pour l'apprentissage pratique.",
+
+    card2Title:
+    "Localisation",
+
+    card2Text:
+    "L'École Professionnelle Agricole Conde de São Bento est située à Santo Tirso, dans le district de Porto, entourée d'espaces verts et agricoles.",
+
+    card3Title:
+    "Patrimoine",
+
+    card3Text:
+    "L'établissement intègre des bâtiments historiques liés à l'ancien Monastère de São Bento, un repère important de la région.",
+    campusTitle:
+    "Explorer le Campus!",
+
+    adegaTitle:
+    "Cave à Vin",
+
+    adegaText:
+    "Découvrez l’espace dédié à la tradition viticole et à la production agricole.",
+
+    estufaTitle:
+    "Serre",
+
+    estufaText:
+    "Explorez l’espace de culture protégée et d’apprentissage agricole.",
+
+    vacariaTitle:
+    "Étable et Animaux",
+
+    vacariaText:
+    "Découvrez la zone d’élevage et les équipements techniques associés.",
+
+    oficinasTitle:
+    "Ateliers Techniques",
+
+    oficinasText:
+    "Explorez les espaces techniques et pédagogiques dédiés à la formation pratique.",
+
+    capelaTitle:
+    "Chapelle",
+
+    capelaText:
+    "Visitez l’un des espaces historiques les plus emblématiques de l’école.",
+
+    ledTitle:
+    "Salle LED",
+
+    ledText:
+    "Découvrez l'espace technologique et multimédia de l'école.",
+
+    lagarTitle:
+    "Pressoir",
+
+    lagarText:
+    "Découvrez l'espace lié à la tradition agricole et à la production historique.",
+
+    salasTitle:
+    "Salles de Classe",
+
+    salasText:
+    "Découvrez les espaces d’apprentissage et de formation académique.",
+
+    }
+
+};
+
+function changeLanguage(language){
+
+    document.querySelectorAll("[data-key]").forEach(element => {
+
+        const key = element.getAttribute("data-key");
+
+        element.innerHTML = translations[language][key];
+
+    });
+
+}
+
+</script>
+</body>
+</html>
