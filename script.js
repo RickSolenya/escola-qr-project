@@ -34,3 +34,33 @@ function changeLanguage(language){
     });
 
 }
+
+/* =========================
+   MAPA OPEN
+========================= */
+
+function openMap(image){
+
+    const overlay = document.createElement("div");
+
+    overlay.className = "map-fullscreen";
+
+
+    const img = document.createElement("img");
+
+    img.src = image.src;
+
+
+    overlay.appendChild(img);
+
+
+    document.body.appendChild(overlay);
+
+
+    overlay.onclick = function(){
+
+        overlay.remove();
+
+    }
+
+}
